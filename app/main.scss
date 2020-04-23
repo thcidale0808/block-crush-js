@@ -1,0 +1,60 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #999;
+
+$red: #e15d6d;
+$green: #6cb039;
+$blue: #526298;
+$yellow: #e1c058; 
+$white: #FFFF; 
+
+body {
+  font: 10pt $font-stack;
+  color: $primary-color;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#grid {
+  width: 100%;
+  height: 100%;
+  background: grey;
+}
+
+.col {
+  background: grey;
+  float:left;
+  width: 10%;
+  height: 100%;
+}
+.block {
+  width: 100%;
+  height: 10%;
+  background: red;
+  float: left;
+  margin: 0;
+  padding: 0;
+  transition: all;
+  &__red {
+    background: $red;
+  }
+  &__green {
+    background: $green;
+  }
+  &__blue {
+    background: $blue;
+  }
+  &__yellow {
+    background: $yellow;
+  }
+  &__white {
+    background: $white;
+  }
+}
+
+.active {
+    -webkit-box-shadow: inset 0 0 10px #000000;
+}
